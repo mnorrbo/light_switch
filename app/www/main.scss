@@ -1,0 +1,43 @@
+@import './_variables';
+
+body {
+  background: $light-primary;
+  color: $light-text;
+  font-family: $primary-font;
+  font-size: $primary-font-size;
+}
+
+.dark-mode {
+  background: $dark-primary;
+  color: $dark-text;
+}
+
+.btn {
+  background: $dark-primary;
+  color: $dark-text;
+
+  &:hover {
+      background: lighten($dark-primary, 40%);
+      color: lighten($dark-text, 40%);
+  }
+}
+
+.light-mode {
+  background: $light-primary;
+  color: $light-text;
+  
+  &:hover {
+      background: darken($light-primary, 40%);
+      color: darken($light-text, 40%);
+  }
+}
+
+.pretty .state label:before {
+  border: none;
+  border-color: transparent;
+}
+
+.pretty .state label:after {
+  border: none;
+  border-color: transparent;
+}
