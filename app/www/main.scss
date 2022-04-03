@@ -41,3 +41,7 @@ body {
   border: none;
   border-color: transparent;
 }
+
+.pretty.p-toggle .state.p-off .icon {
+  color: $light-text;
+}
